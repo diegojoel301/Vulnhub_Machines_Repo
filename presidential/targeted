@@ -1,0 +1,19 @@
+# Nmap 7.94 scan initiated Wed Jun 26 14:57:04 2024 as: nmap -p80,2082 -sCV -oN targeted 192.168.86.31
+Nmap scan report for votenow.lan (192.168.86.31)
+Host is up (0.00032s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.5.38)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Ontario Election Services &raquo; Vote Now!
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.5.38
+2082/tcp open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 06:40:f4:e5:8c:ad:1a:e6:86:de:a5:75:d0:a2:ac:80 (RSA)
+|   256 e9:e6:3a:83:8e:94:f2:98:dd:3e:70:fb:b9:a3:e3:99 (ECDSA)
+|_  256 66:a8:a1:9f:db:d5:ec:4c:0a:9c:4d:53:15:6c:43:6c (ED25519)
+MAC Address: 00:0C:29:C0:B0:7C (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jun 26 14:57:11 2024 -- 1 IP address (1 host up) scanned in 7.51 seconds
